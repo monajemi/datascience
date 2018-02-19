@@ -38,10 +38,6 @@ author: Hatef Monajemi
 email: hatefmonajemi@gmail.com
 #avatar: assets/images/HatefMonajemi.jpeg
 
-plugins:
-  - jekyll-redirect-from
-
-
 # You'll want to customize url and baseurl for your own site:
 baseurl: "/datascience" # the subpath of your site, e.g. /blog
 url: "" # the base hostname & protocol for your site
