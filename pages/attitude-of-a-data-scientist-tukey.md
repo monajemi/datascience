@@ -12,7 +12,7 @@ More than half a century ago in ["the future of data analysis"](https://projecte
 
 <div style="background-color:rgba(255,255,255, 0.9); font-family:Times; text-align:left; vertical-align: middle; padding:30px;color:black;font-size:12;border-radius:10px;">
 <p align="justify">
-"<b>What are the necessary attitudes?</b> Almost all the most vital attitudes
+<b>What are the necessary attitudes?</b> Almost all the most vital attitudes
 can be described in a type form: <em>willingness to face up to X.</em> Granted that facing
 up can be uncomfortable, history suggests it is possible.
 <br>    
@@ -97,6 +97,5 @@ if data analysis cannot be a logico-deductive system, it inevitably falls to the
 state of a crass technology. With them I cannot agree. It will still be true that
 there will be aspects of data analysis well called technology, but there will also
 be the hallmarks of stimulating science: intellectual adventure, demanding
-calls upon insight, and a need to find out "how things really are" by investiga
-tion and the confrontation of insights with experience."
+calls upon insight, and a need to find out "how things really are" by investigation and the confrontation of insights with experience.
 -- John Tukey (The Future of Data Analysis)</p></div>
