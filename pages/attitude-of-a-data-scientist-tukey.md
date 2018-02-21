@@ -8,7 +8,7 @@ hide: true
 googlewebfonts: Gloria+Hallelujah
 ---
 
-More than half a century ago in ["the future of data analysis"](https://projecteuclid.org/euclid.aoms/1177704711), John Tukey envisions a future academic field that today we can recognize as **data science**. In part of his seminal paper, John lists what he thinks ought to be necessary attitudes for a data scientist. Since this is an imporatnt part of data science, I thought to share it with all of data scientists out there!
+More than half a century ago in ["the future of data analysis"](https://projecteuclid.org/euclid.aoms/1177704711), John Tukey envisioned a yet unrecognized field of science that is concerned with *providing answers to realistic problems by experimentation, analysis of data, and judgements that may be guided by theory*. In 1962, he used *data analysis* to describe what today is recognized as **data science**. As part of his seminal paper, John lists what he thinks ought to be necessary attitudes for a data scientist. Since this is an imporatnt part of data science, I thought to share it with all of data scientists out there! 
 
 <div style="background-color:rgba(255,255,255, 0.9); font-family:Times; text-align:left; vertical-align: middle; padding:30px;color:black;font-size:12;border-radius:10px;">
 <p align="justify">
