@@ -91,8 +91,7 @@ rather than by what is known about the situation at hand.
 <br>
 Finally, we need to give up the vain hope that data analysis can be founded
 upon a logico-deductive system like Euclidean plane geometry (or some form
-of the propositional calculus) and to face up to the fact that <em>data analysis is in
-trinsically an empirical science</em>. Some may feel let down by this, may feel that
+of the propositional calculus) and to face up to the fact that <em>data analysis is intrinsically an empirical science</em>. Some may feel let down by this, may feel that
 if data analysis cannot be a logico-deductive system, it inevitably falls to the
 state of a crass technology. With them I cannot agree. It will still be true that
 there will be aspects of data analysis well called technology, but there will also
