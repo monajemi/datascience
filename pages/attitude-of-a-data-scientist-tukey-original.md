@@ -36,8 +36,7 @@ to fact in application than some supposedly exact results.
 We need to face up to the need for <em>collecting the results of actual experience
 with specific data-analytic techniques</em>. Mathematical or empirical-sampling studies
 of the behavior of techniques in idealized situations have very great value, but
-they cannot replace experience with the behaviour of techniques in real situa
-tions.   
+they cannot replace experience with the behaviour of techniques in real situations.   
 <br>
 We need to face up to the <em>need for iterative procedures in data analysis</em>. It is
 nice to plan to make but a single analysis, to avoid finding that the results of
@@ -50,10 +49,7 @@ rather than simpler, and reanalysis will become much more nearly the custom.
 We need to face up to the <em>need for both indication and conclusion in the same
 analysis</em>. Appearances which are not established as of definite sign, for example,
 are not all of a muchness. Some are so weak as to be better forgotten, others
-approach the borders of establishment so closely as warrant immediate and ac
-tive following up. And the gap between what is required for an interesting indi
-cation and for a conclusion widens as the structure of the data becomes more
-complex.
+approach the borders of establishment so closely as warrant immediate and active following up. And the gap between what is required for an interesting indication and for a conclusion widens as the structure of the data becomes more complex.
 <br>
 We need to face up to the need for <em>a free use of ad hoc and informal procedures
 in seeking indications</em>. At those times when our purpose is to ask the data what
@@ -73,8 +69,7 @@ We must face up to the need for a <em>double standard in dealing with error rate
 whether significance levels or lacks of confidence</em>. As <em>students</em> and <em>developers</em> of
 data analysis, we may find it worth while to be concerned about small difference
 among error rates, perhaps with the fact that a nominal 5 % is really 4 % or 6 %,
-or even with so trivial a difference as from 5 % to 4.5 % or 5.5 %. But as prac
-titioners of data analysis we must take a much coarser attitude toward error
+or even with so trivial a difference as from 5 % to 4.5 % or 5.5 %. But as practitioners of data analysis we must take a much coarser attitude toward error
 rates, one which may sometimes have difficulty distinguishing 1 % from 5 %,
 one which is hardly ever able to distinguish more than one intermediate value
 between these conventional levels. To be useful, a conclusion procedure need
@@ -84,9 +79,7 @@ We must face up to the fact that, in any experimental science, <em>our certainty
 about what will happen in a particular situation does not usualy come from directly
 applicable experiments or theory</em>, but rather comes mainly through analogy be
 tween situations which are <em>not known</em> to behave similarly. Data analysis has, of
-necessity, to be an experimental science, and needs therefore to adopt the atti
-tudes of experimental science. As a consequence our choices of analytical ap
-proach will usually be guided by what is known about simpler or similar situations, 
+necessity, to be an experimental science, and needs therefore to adopt the attitudes of experimental science. As a consequence our choices of analytical approach will usually be guided by what is known about simpler or similar situations, 
 rather than by what is known about the situation at hand.   
 <br>
 Finally, we need to give up the vain hope that data analysis can be founded
