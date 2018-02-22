@@ -8,7 +8,7 @@ hide: true
 googlewebfonts: Gloria+Hallelujah
 ---
 
-More than half a century ago in ["the future of data analysis"](https://projecteuclid.org/euclid.aoms/1177704711), John Tukey envisioned *a yet unrecognized field of science that is concerned with providing answers to realistic problems by means of experimentation, analysis of data, and judgements that may be guided by theory*. In 1962, he used *data analysis* to describe this field but today we can recognize it as *data science*. As part of his seminal paper, John lists what he thinks ought to be necessary attitudes for a data scientist. Since this is an important part of data science, I thought to share this part of John's paper with all data scientists out there. Also, because we are now in the "future" with respect to Tukey, I have taken the liberty of changing all occurances of 'data analysis' to 'data sience' in his original text. To see the original document: [`sed 's/data science/data analysis/g'`](attitude-of-a-data-scientist-tukey-original).
+More than half a century ago in ["the future of data analysis"](https://projecteuclid.org/euclid.aoms/1177704711), John Tukey envisioned *a yet unrecognized field of science that is concerned with providing answers to realistic problems by means of experimentation, analysis of data, and judgements that may be guided by theory*. In 1962, he used *data analysis* to describe this field but today we can recognize it as *data science*. As part of his seminal paper, John lists what he thinks ought to be necessary attitudes for a data scientist. Since this is an important part of data science, I thought to share this part of John's paper with all data scientists out there. Also, because we are now in the "future" with respect to Tukey, I have taken the liberty of changing all occurances of 'data analysis' to 'data sience' in his original text. To see the original document: [`sed 's/data science/data analysis/gI'`](attitude-of-a-data-scientist-tukey-original).
 
 <div style="background-color:rgba(255,255,255, 0.9); font-family:Times; text-align:left; vertical-align: middle; padding:30px;color:black;font-size:12;border-radius:10px;">
 <p align="justify">
@@ -78,7 +78,7 @@ not be precise. As working data analysts we need to recognize that this is so.
 We must face up to the fact that, in any experimental science, <em>our certainty
 about what will happen in a particular situation does not usualy come from directly
 applicable experiments or theory</em>, but rather comes mainly through analogy be
-tween situations which are <em>not known</em> to behave similarly. Data analysis has, of
+tween situations which are <em>not known</em> to behave similarly. Data science has, of
 necessity, to be an experimental science, and needs therefore to adopt the attitudes of experimental science. As a consequence our choices of analytical approach will usually be guided by what is known about simpler or similar situations, 
 rather than by what is known about the situation at hand.   
 <br>
