@@ -51,17 +51,7 @@ chmod +x elasticluster.sh
     
     You must change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources.  As an example, on Google Cloud, you should retrive your `project_id`, `client_id`, and `client_secret` by visiting the [Credential Page](https://accounts.google.com/signin/v2/sl/pwd?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fproject%2F_%2Fapiui%2Fcredential&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fproject%2F_%2Fapiui%2Fcredential&flowName=GlifWebSignIn&flowEntry=ServiceLogin) and update the contents of `~/.elasticluster/config` by providing these credentials.
 
-3. Build your cluster 
-```
-./elasticluster.sh -vvvv start gce
-```    
-> Note that cluster named `gce` is fully defined in your `~/.elasticluster/config`. For convenient use, you may add an alias 
-> to your `~/.bashrc` or `~/.bash_profile`:     
-> `alias elasticluster='/PATH/TO/SCRIPT/./elasticluster.sh'`
-    
-
-    ```         
-    [See source on GitHub](https://github.com/stats285/docker-elasticluster-gpu/blob/master/elasticluster-feature-gpus-on-google-cloud/config-template-gce-gpu)
+    [See config example on GitHub](https://github.com/stats285/docker-elasticluster-gpu/blob/master/elasticluster-feature-gpus-on-google-cloud/config-template-gce-gpu)
 
     > [`gcloud`](https://cloud.google.com/sdk/gcloud/) provides useful commands to see the available options, for example:   
     > `gcloud compute machine-types list --zones us-west1-a`    
@@ -69,11 +59,15 @@ chmod +x elasticluster.sh
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
     > Also,  `gcloud compute images list` list all the available images.
 
-* Start your cluster (This step takes >10 min depending on the number of nodes you request):    
 
-    ```bash
-    elasticluster -vvvv start gce
-    ```   
+3. Build your cluster 
+```
+./elasticluster.sh -vvvv start gce
+```    
+> Note that cluster named `gce` is fully defined in your `~/.elasticluster/config`. For convenient use, you may add an alias 
+> to your `~/.bashrc` or `~/.bash_profile`:     
+> `alias elasticluster='/PATH/TO/SCRIPT/./elasticluster.sh'`
+
 	if you run into error, and asked to run the setup again, please do so using,       
     ```bash
     elasticluster -vvvv setup gce
