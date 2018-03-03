@@ -11,13 +11,13 @@ hide: true
 ```
 [gce]
 Host	        35.199.171.137
-User		hatefmonajemi
-Bqs		SLURM
-Repo		/home/hatefmonajemi/CJRepo_Remote
-MAT           ""
-MATlib	""
-Python	python3.4
-Pythonlib	pytorch:torchvision:cuda80:pandas:matplotlib:-c soumith
+User            hatefmonajemi
+Bqs             SLURM
+Repo            /home/hatefmonajemi/CJRepo_Remote
+MAT             ""
+MATlib          ""
+Python          python3.4
+Pythonlib       pytorch:torchvision:cuda80:pandas:matplotlib:-c soumith
 [gce]
 
 ```
