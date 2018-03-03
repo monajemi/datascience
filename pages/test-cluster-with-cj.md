@@ -45,6 +45,6 @@ cj state
 cj summary gce
 ```
 
-If everything makes sense, move on to running your assigned Deep Learning experiments.
+If everything makes sense, move on to running your own data science experiments.
 
 [Go Back](monajemi-murri-model)
