@@ -103,7 +103,9 @@ After you have launched your cluster successfully, it is time to test it by runn
 using **ClusterJob**. Follow the instructions below to test your cluster:
 
 
-- [Install ClusterJob on your machine](./cj-install-instructions)
+- [Install ClusterJob on your machine]
+* Sign up for ClusterJob on [clusterjob.org](http://clusterjob.org)   
+* Follow [CJ Installation Guide](http://clusterjob.org/documentation/book.html#_step_2_installing_cj) to install it on your machine.
 - [Test your cluster with CJ](./test-cluster-with-cj)
 
 
