@@ -27,7 +27,7 @@ To create your own cluster on the cloud, you should take the following 3 steps:
 
 ## Part-1: Setup Your Cloud Account
 - [Setup instructions for Google Compute Engine](./gce-setup-instructions)
-- [Setup instructions for Amazon EC2](./ec2-setup-instructions)
+- [Setup instructions for Amazon EC2](./aws-setup-instructions)
 - [Setup instructions for Microsoft Azure](./azure-setup-instructions)
 
 
