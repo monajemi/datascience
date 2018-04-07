@@ -35,7 +35,7 @@ To create your own cluster on the cloud, you should take the following 3 steps:
 
 1. Get elasticluster 0-install script from GitHub or [download it from this website](../assets/files/elasticluster.sh)   
 ```
-curl -O https://raw.githubusercontent.com/riccardomurri/elasticluster/feature/docker/elasticluster.sh
+curl -O https://raw.githubusercontent.com/gc3-uzh-ch/elasticluster/master/elasticluster.sh
 chmod +x elasticluster.sh
 ```
 2. Provide your desired configuration
@@ -73,7 +73,7 @@ chmod +x elasticluster.sh
     elasticluster -vvvv setup gce
     ```    
 
-* You can also monitor the progress at your cloud console ( e.g., [Google Cloud Consol](https://console.cloud.google.com/) , [EC2 Consol](http://console.aws.amazon.com/) )   
+* You can also monitor the progress at your cloud console ( e.g., [Google Cloud Consol](https://console.cloud.google.com/) , [EC2 Consol](http://console.aws.amazon. )   
 	   
     **if everything goes well, you will see** `your cluster is ready!`. **This is the moment you should shout** *Yay!* **and congratulate yourself. You now have your own cluster!**
 	
