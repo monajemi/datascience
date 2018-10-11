@@ -11,6 +11,6 @@ This is a companion page for the paper "Painless Computing Models for Ambitious 
 [Download Paper](#)   
 
 # Paper's How-to Guides 
-1. [Monajemi-Murri Model](./monajemi-murri-model)
+1. [ElastiCluster-ClusterJob Model](./elasticluster-clusterjob-model)
 2. [PyWren](pywren)
 3. [CodaLab](CodaLab)
