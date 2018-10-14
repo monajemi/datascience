@@ -27,4 +27,4 @@ hide: true
 
 * To see a list of VM images that you can use, visit [Azure Image List](https://gist.github.com/sjkp/60085891dd03b8cfb7c4)
 
-[Continue to Step 2: Creating Your Cluster](monajemi-murri-model/#part-2-create-your-cluster-using-elasticluster)
+[Continue to Step 2: Creating Your Cluster](elasticluster-clusterjob-model#part-2-create-your-cluster-using-elasticluster)

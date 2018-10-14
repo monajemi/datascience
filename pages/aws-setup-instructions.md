@@ -20,4 +20,4 @@ hide: true
     Visit [Amazon Instance Types](https://aws.amazon.com/ec2/instance-types/) to see what fits your needs.
 
 
-[Continue to Step 2: Creating Your Cluster](monajemi-murri-model/#part-2-create-your-cluster-using-elasticluster)
+[Continue to Step 2: Creating Your Cluster](elasticluster-clusterjob-model#part-2-create-your-cluster-using-elasticluster)
