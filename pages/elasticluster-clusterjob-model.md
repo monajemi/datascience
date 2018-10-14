@@ -18,20 +18,28 @@ Please send your questions to [CJ's Google group](https://groups.google.com/foru
 
 # Building your cluster in the cloud
 
-To create your own cluster in the cloud, you should take the following 3 steps:
+To create your own cluster in the cloud, you should take the following 4 steps:
 
-1. [Setup your cloud account](#part-1-setup-your-cloud-account)      
-2. [Create your cluster using 0-install ElastiCluster script](#part-2-create-your-cluster-using-elasticluster)
-3. [Install ClusterJob and test your cluster](#part-3-test-your-cluster-with-clusterjob)
+1. [Install ClusterJob](#part-1-install-cj)
+1. [Setup your cloud account](#part-2-setup-your-cloud-account)      
+1. [Create your cluster using 0-install ElastiCluster script](#part-3-create-your-cluster-using-elasticluster)
+1. [Test your cluster works with CJ](#part-4-test-your-cluster-works-with-cj)
 
 
-## Part-1: Setup Your Cloud Account
+## Part-1: Install ClusterJob
+
+- Sign up for ClusterJob on [clusterjob.org](http://clusterjob.org)   
+- Follow [CJ Installation Guide](http://clusterjob.org/documentation/book.html#_step_2_installing_cj) to install it on your machine.
+
+
+
+## Part-2: Setup Your Cloud Account
 - [Setup instructions for Google Compute Engine](./gce-setup-instructions)
 - [Setup instructions for Amazon EC2](./aws-setup-instructions)
 - [Setup instructions for Microsoft Azure](./azure-setup-instructions)
 
 
-## Part-2: Create Your Cluster Using Elasticluster
+## Part-3: Create Your Cluster Using Elasticluster
 
 1. Get elasticluster 0-install script from GitHub or [download it from this website](../assets/files/elasticluster.sh)   
 ```
@@ -98,13 +106,9 @@ chmod +x elasticluster.sh
 
 [comment]: # ( You can shut-off your cluster and reinitiate at a later time by logging to your [consol](https://console.cloud.google.com/). Currently ElastiCluster does not have this capability. For more info please visit [stopping-or-deleting-an-instance](https://cloud.google.com/compute/docs/instances/stopping-or-deleting-an-instance) )       
 
-## Part-3: Install ClusterJob and test your cluster
-After you have launched your cluster successfully, it is time to test it by running a sample job on it
-using **ClusterJob**. Follow the instructions below to test your cluster:
+## Part-4: Test your cluster works with CJ
 
-1. Install ClusterJob on your machine   
-    * Sign up for ClusterJob on [clusterjob.org](http://clusterjob.org)   
-    * Follow [CJ Installation Guide](http://clusterjob.org/documentation/book.html#_step_2_installing_cj) to install it on your machine.
-2. [Test your cluster with CJ](./test-cluster-with-cj)
+After you have launched your cluster successfully, it is time to test it by running a sample job on it
+using **ClusterJob**. Follow the instructions on [Test Your Cluster With CJ](./test-cluster-with-cj).
 
 
