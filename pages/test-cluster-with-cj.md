@@ -49,7 +49,13 @@ cj ls
 
 ```
 cj run mnist.py gce -alloc "--gres=gpu:1" -m "Pytorch on GPU test"
+
+# see state of your job
 cj state
+
+# see the run log
+cj runlog 
+
 # get a summary of all jobs on your cluster
 cj summary gce
 ```
