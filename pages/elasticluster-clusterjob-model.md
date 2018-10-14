@@ -43,7 +43,7 @@ chmod +x elasticluster.sh
     elasticluster.sh list-templates
     vim ~/.elasticluster/config
 ```    
-    You may use the default Elasticluster config template or [`elasticluster_config` that is provided with this companion page]({{ site.url }}/assets/files/elasticluster_config). You can get `elasticluster_config` via the following commands:
+    You may use the default Elasticluster config template or [`elasticluster_config` that is provided with this companion page]({{site.url}}/datascience/assets/files/elasticluster_config). You can get `elasticluster_config` via the following commands:
     ```
     curl -O  https://monajemi.github.io/datascience/assets/files/elasticluster_config
     cp monajemi_config ~/.elasticluster/config
