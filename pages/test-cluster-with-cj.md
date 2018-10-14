@@ -39,8 +39,7 @@ Rlib            ""
 ```
 # update cj
 cj update
-# install conda
-cj install miniconda gce
+
 # test CJ run
 cj run simpleExample.py gce -m "Python on CPU test"
 cj state
@@ -57,4 +56,4 @@ cj summary gce
 
 If everything makes sense, move on to running your own data science experiments.
 
-[Go Back](monajemi-murri-model)
+[Go Back](elasticluster-clusterjob-model)
