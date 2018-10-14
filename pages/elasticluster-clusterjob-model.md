@@ -1,5 +1,5 @@
 ---
-title: Monajemi-Murri Computing Model 
+title: ElastiCluster-ClusterJob Computing Model 
 #subtitle: By Hatef Monajemi
 author: Hatef Monajemi
 layout: page
