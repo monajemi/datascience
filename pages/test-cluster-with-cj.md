@@ -12,6 +12,7 @@ or update your cluster.
 ```
 cj config <CLUSTER_NAME>
 cj config <CLUSTER_NAME> --update
+cj config-update <CLUSTER_NAME>
 ```
 
 Here is an example:    

@@ -12,5 +12,5 @@ This is a companion page for the paper "Painless Computing Models for Ambitious 
 
 # Paper's How-to Guides 
 1. [ElastiCluster-ClusterJob Model](./elasticluster-clusterjob-model)
-2. [PyWren](pywren)
-3. [CodaLab](CodaLab)
+2. [PyWren](http://pywren.io)
+3. [CodaLab](https://worksheets.codalab.org)
