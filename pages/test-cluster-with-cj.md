@@ -6,7 +6,15 @@ layout: page
 hide: true
 ---
 
-* add your cluster info to `~/CJ_install/ssh_config`. Here is an example:    
+* add your cluster info to `~/CJ_install/ssh_config`.  You may use the followng CJ commands to configure
+or update your cluster.
+
+```
+cj config <CLUSTER_NAME>
+cj config <CLUSTER_NAME> --update
+```
+
+Here is an example:    
 
 ```
 [gce]
@@ -18,6 +26,8 @@ MAT             ""
 MATlib          ""
 Python          python3.4
 Pythonlib       pytorch:torchvision:cuda80:pandas:matplotlib:-c soumith
+R               ""
+Rlib            ""
 [gce]
 
 ```
