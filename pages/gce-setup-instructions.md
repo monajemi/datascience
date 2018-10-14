@@ -29,4 +29,4 @@ hide: true
 For more info on obtaining your Google credentials, you may visit [googlegenomics](http://googlegenomics.readthedocs.io/en/latest/use_cases/setup_gridengine_cluster_on_compute_engine/)     
 
 
-[Continue to Step 2: Creating Your Cluster](monajemi-murri-model/#part-2-create-your-cluster-using-elasticluster)
+[Continue to Step 2: Creating Your Cluster](elasticluster-clusterjob-model/#part-2-create-your-cluster-using-elasticluster)
