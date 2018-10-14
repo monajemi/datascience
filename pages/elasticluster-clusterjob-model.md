@@ -46,7 +46,7 @@ chmod +x elasticluster.sh
     You may use the default Elasticluster config template or [`elasticluster_config` that is provided with this companion page]({{site.url}}/datascience/assets/files/elasticluster_config.txt). You can get `elasticluster_config` via the following commands:
     ```
     curl -O  https://monajemi.github.io/datascience/assets/files/elasticluster_config
-    cp monajemi_config ~/.elasticluster/config
+    cp elasticluster_config ~/.elasticluster/config
     ``` 
     
     You must change the contents of the elasticluster config file `~/.elasticluster/config` to reflect your own credentials and choice of resources.  As an example, on Google Cloud, you should retrive your `project_id`, `client_id`, and `client_secret` by visiting the [Credential Page](https://accounts.google.com/signin/v2/sl/pwd?service=cloudconsole&passive=1209600&osid=1&continue=https%3A%2F%2Fconsole.cloud.google.com%2Fproject%2F_%2Fapiui%2Fcredential&followup=https%3A%2F%2Fconsole.cloud.google.com%2Fproject%2F_%2Fapiui%2Fcredential&flowName=GlifWebSignIn&flowEntry=ServiceLogin) and update the contents of `~/.elasticluster/config` by providing these credentials.
