@@ -1,0 +1,189 @@
+# ElastiCluster Configuration Template
+# ====================================
+# Author: Hatef Monajemi (July 2018)
+#
+
+######################################################
+#	SETUP IS INDEPENDENT OF THE CLOUD PROVIDER 
+#                   NO CHANGE IS NEEDED
+######################################################
+[setup/ansible-slurm]
+provider=ansible
+frontend_groups=slurm_master
+compute_groups=slurm_worker,cuda
+
+# allow restart of compute nodes
+compute_var_allow_reboot=yes
+global_var_slurm_taskplugin=task/cgroup
+global_var_slurm_proctracktype=proctrack/cgroup
+global_var_slurm_jobacctgathertype=jobacct_gather/cgroup
+
+
+
+######################################################
+#			 GOOGLE CLOUD
+######################################################
+## Create a cloud provider (call it "google-cloud")
+[cloud/google]
+provider=google
+noauth_local_webserver=True
+gce_client_id=****PROVIDE YOUR OWN CLIENT ID ******
+gce_client_secret=****PROVIDE YOUR OWN SECRET******
+gce_project_id=****PROVIDE YOUR OWN PROJECT IP******
+zone=us-west1-b
+
+
+## Create a login
+[login/google]
+# Do not include @gmail
+image_user=****PROVIDE YOUR OWN GMAIL USERNAME******
+image_user_sudo=root
+image_sudo=True
+user_key_name=elasticluster
+user_key_private=~/.ssh/id_rsa
+user_key_public=~/.ssh/id_rsa.pub
+
+
+[cluster/gce]
+cloud=google
+login=google
+setup=ansible-slurm
+security_group=default
+image_id=ubuntu-1604-xenial-v20171107b
+frontend_nodes=1
+compute_nodes=4
+ssh_to=frontend
+# Ask for 100G of disk space
+boot_disk_type=pd-standard
+boot_disk_size=100
+
+
+
+# Use 4vCPU nodes for the frontend node
+[cluster/gce/frontend]
+flavor=n1-standard-4
+
+# Add 2x GPUs (NVIDIA Tesla K80) to each compute nodes
+# note that as of Nov. 2017, GPU-enabled VMs are available only in few zones
+# use `gcloud compute accelerator-types list` to see what is available
+
+[cluster/gce/compute]
+flavor=n1-standard-8
+accelerator_count=2
+accelerator_type=nvidia-tesla-k80
+
+
+############################################################################
+#                           Amazon Web Services 
+############################################################################
+
+[cloud/aws]
+provider=ec2_boto
+ec2_url=https://ec2.us-west-2.amazonaws.com
+ec2_access_key=*****PROVIDE YOUR OWN ACCESS KEY********
+ec2_secret_key=*****PROVIDE YOUR OWN SECRET KEY********
+# note: AMIs differ from one region to the other -- if you change the region here,
+# you might need to change the `image_id` setting in the cluster section below
+ec2_region=us-west-2
+
+
+## This part would not need further modification
+[login/ec2]
+image_user=ubuntu
+image_user_sudo=root
+image_sudo=True
+user_key_name=elasticluster
+user_key_private=~/.ssh/id_rsa
+user_key_public=~/.ssh/id_rsa.pub
+
+
+# Define Your EC2 cluster
+[cluster/ec2]
+cloud=aws
+login=ec2
+setup=ansible-slurm
+security_group=default
+# Ubuntu Image available for Oregan us-west-2
+# check images at https://us-west-2.console.aws.amazon.com/ec2/v2/home?region=us-west-2#Images:visibility=public-images;search=ubuntu;sort=name
+image_id=ami-0aac2e72
+frontend_nodes=1
+compute_nodes=1
+ssh_to=frontend
+# Ask for 100G of disk
+boot_disk_type=standard
+boot_disk_size=100
+
+
+[cluster/ec2/frontend]
+# For available flavors see https://aws.amazon.com/ec2/instance-types/
+# t2.xlarge 4 vCPU, Mem:16GB
+flavor=t2.xlarge
+
+# On AWS, the presence and number of NVIDIA GPU accelerators depends
+# on the machine type.  At the moment of this writing, only P2 and P3
+# instances provide CUDA-capable GPUs. See https://aws.amazon.com/ec2/instance-types/
+
+[cluster/ec2/compute]
+# p3.16xlarge 8GPU, 64 vCPU, Mem:488GB, GPUMem:128GB,
+flavor=p3.16xlarge
+
+
+
+############################################################################
+#                           Azure Cloud
+############################################################################
+
+
+[cloud/azure]
+provider=azure
+subscription_id=9aa4789b-5e57-4191-bb74-ef4f66967134
+# Create Tenant (Directory) ID, client ID, client secrete
+# See https://docs.microsoft.com/en-us/azure/azure-resource-manager/resource-group-create-service-principal-portal#get-application-id-and-authentication-key
+tenant_id=*****PROVIDE YOUR OWN TENANT ID******
+#Client (Application) ID
+client_id=*****PROVIDE YOUR OWN CLIENT ID******
+secret=******PROVIDE YOUR OWN SECRET ID********
+
+
+[login/azure]
+# note: `image_user` depends on the `image_id`!
+image_user=ubuntu
+image_user_sudo=root
+image_sudo=True
+# keypair used to ssh. These must match the certificate uploaded to Azure
+user_key_name=elasticluster
+user_key_private=~/.ssh/id_rsa
+user_key_public=~/.ssh/id_rsa.pub
+
+
+[cluster/az]
+global_var_ansible_ssh_host_key_dsa_public=''
+frontend_nodes=1
+compute_nodes=1
+cloud=azure
+login=azure
+setup=ansible-slurm
+location=West US 2
+ssh_to=frontend
+# in Azure, `image_id` is a `/`-separated 4-uple, consisting of:
+# publisher (e.g., `canonical`), offer (e.g., `ubuntuserver`),
+# sku (e.g., `16.04.0-LTS`), version (e.g., `latest`)
+# For a list of popular images, see https://docs.microsoft.com/en-us/azure/virtual-machines/linux/cli-ps-findimage#list-popular-images
+image_id=canonical/ubuntuserver/16.04.0-LTS/latest
+security_group=default
+# default will be 30G of storage
+boot_disk_size=100
+
+
+
+[cluster/az/frontend]
+flavor=Standard_A2_v2
+
+# On Azure, the presence and number of NVIDIA GPU accelerators depends
+# on the instance type.
+# For available instance types see
+# https://azure.microsoft.com/en-us/pricing/details/virtual-machines/linux/
+
+[cluster/az/compute]
+#NC12 12vCPU 112.00GB RAM, 680 GB Storage,2xK80 price $1.80/hour
+flavor=Standard_ND12
