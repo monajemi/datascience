@@ -73,7 +73,7 @@ or even with so trivial a difference as from 5 % to 4.5 % or 5.5 %. But as pract
 rates, one which may sometimes have difficulty distinguishing 1 % from 5 %,
 one which is hardly ever able to distinguish more than one intermediate value
 between these conventional levels. To be useful, a conclusion procedure need
-not be precise. As working data analysts we need to recognize that this is so.
+not be precise. As working data scientists we need to recognize that this is so.
 <br>
 We must face up to the fact that, in any experimental science, <em>our certainty
 about what will happen in a particular situation does not usualy come from directly
