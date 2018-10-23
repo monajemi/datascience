@@ -23,7 +23,7 @@ hide: true
 <!-- 8. Go to [Metadata](https://console.cloud.google.com/compute/metadata/sshKeys) and add your `~/.ssh/id_rsa.pub` contents to SSH Keys on Google. -->
 > If you fail to satisfy steps 6 and 7 above, your instances will not start and you get errors. Make sure you enable those.
 9. If you do GPU computing, visit [quota page](https://console.cloud.google.com/projectselector/iam-admin/quotas), choose your project, then **EDIT QUOTAS** and request 8 NVIDIA K80 GPUs at `us-west1` zone. You will need this to use GPU accelerators. The default GPU quota is zero. For “justification” write a good reason such as “ambitious data science”. For ease of selection choose your only favorite GPU type in the `Metric` column. <br>
-    <img src="../assets/images/Increase_GPU_quota.png" width="600" /><br><span style="color:red"> 
+    <img src="../assets/images/Increase_GPU_quota.png" width="600" /><br><span style="color:red"> <br> For new google cloud accounts, you may have to also increase `GPU (all region)` quota.
 
 <br>If you are unable to choose the GPU service, then the billing account associated with your project is incorrect. In this case, go to [Billing Page](https://console.cloud.google.com/billing) and change the billing account to the correct one as shown in the picture below.   
     <img src="../assets/images/billing-change.png" width="600" /><br><span style="color:red"> **Please note that if you request more than 8 GPUs, google requires a $1500 advanced deposit**. So, if you don't plan on using many GPUs, limit your request to 8 or less.' </span>
