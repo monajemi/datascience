@@ -25,7 +25,6 @@ To create your own cluster in the cloud, you should take the following 4 steps:
 1. [Create your cluster using 0-install ElastiCluster script](#part-3-create-your-cluster-using-elasticluster)
 1. [Test your cluster works with CJ](#part-4-test-your-cluster-works-with-cj)
 
-
 ## Part-1: Install ClusterJob
 
 - Sign up for ClusterJob on [clusterjob.org](http://clusterjob.org)   
@@ -66,7 +65,8 @@ chmod +x elasticluster.sh
     > lists all the machine types that are availbale in zone us-west1-a     
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
     > Also,  `gcloud compute images list` list all the available images.
-
+    
+    >> Advanced Tip: [Cluster Sharing](./sharing-cluster) 
 
 3. Spin up your cluster 
 ```
