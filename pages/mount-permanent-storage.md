@@ -1,6 +1,6 @@
 ---
 title: Instructions for Mounting Permanent Storage
-#subtitle: By Riccardo Murri
+subtitle: By Riccardo Murri
 author: Riccardo Murri
 layout: page
 hide: true
