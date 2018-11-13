@@ -6,8 +6,9 @@ layout: page
 hide: true
 ---
 
-## [Cluster Sharing](./sharing-cluster)
-## [Mounting Storage](./)
+1. [Cluster Sharing](./sharing-cluster)
+2. [Mounting Storage](./)
+
 
 [Go Back](elasticluster-clusterjob-model#part-2-create-your-cluster-using-elasticluster)
 
