@@ -65,8 +65,8 @@ chmod +x elasticluster.sh
     > lists all the machine types that are availbale in zone us-west1-a     
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
     > Also,  `gcloud compute images list` list all the available images.
-    
-==[Advanced Tips](./advanced-cluster-setup)==	 
+
+<a href="./advanced-cluster-setup"><span style="background-color: #FFFF00">Advanced Tips</span></a	>   
 
 3. Spin up your cluster 
 ```
