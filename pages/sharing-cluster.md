@@ -77,7 +77,9 @@ the `elasticluster` command.
 5. Each person wanting to have control of the cluster size and lifecycle
 can now run this command to import the cluster state::
 
+```
 elasticluster import /path/to/copied/export/file.zip
+```
 
 6. Everyone should now be able to see the cluster listed in the output
 of `elasticluster list`.
