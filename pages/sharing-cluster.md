@@ -9,7 +9,7 @@ hide: true
 ## Sharing access to a cluster
 
 These instructions apply if you want to give other people access to an
-existing cluster.  The person who set up the cluster retains control of
+existing cluster.  The person who sets up the cluster retains control of
 the cluster: only this person can resize the cluster or stop/destroy it.
 
 1. Collect SSH public keys from all the people you want to give access
@@ -28,7 +28,9 @@ separate file.
 public key file (replace `key.pub` with the actual path to the SSH
 public key file)::
 
+```
 cat key.pub | tee -a $HOME/.ssh/authorized_keys
+```
 
 The above command will give another user access to the account you
 are logging into on the cluster; you can apply the same procedure to
@@ -79,4 +81,4 @@ elasticluster import /path/to/copied/export/file.zip
 of `elasticluster list`.
 
 
-[Go back to ](elasticluster-clusterjob-model#part-2-create-your-cluster-using-elasticluster)
+[Go Back](advanced-cluster-setup)

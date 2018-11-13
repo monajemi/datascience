@@ -66,7 +66,7 @@ chmod +x elasticluster.sh
     > This infomation can be found online on [Google](https://cloud.google.com/compute/docs/machine-types)   
     > Also,  `gcloud compute images list` list all the available images.
     
-    > ==Advanced Tip: [Cluster Sharing](./sharing-cluster)==	 
+==[Advanced Tips](./advanced-cluster-setup)==	 
 
 3. Spin up your cluster 
 ```
