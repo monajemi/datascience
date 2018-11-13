@@ -36,3 +36,5 @@ mkfs.ext4 -L /myvolume /dev/vdb
 If you do not want the volume to be automatically mounted after a
 reboot, replace `defaults` with `defaults,noauto` in the `/etc/fstab`
 line at step 6.
+
+[Go Back](advanced-cluster-setup)
