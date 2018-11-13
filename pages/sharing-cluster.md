@@ -66,7 +66,9 @@ a separate `.conf` file and copy it into your
 3. The person who created the cluster can now run this command to copy
 the cluster state information into a `.zip` file::
 
+```
 elasticluster export -o /path/to/export/file.zip
+```
 
 4. Distribute the `.zip` file to other people who need to control the
 cluster; they should copy it on the machines where they want to run
