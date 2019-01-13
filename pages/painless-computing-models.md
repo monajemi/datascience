@@ -1,12 +1,12 @@
 ---
-title: Painless Computing Models for Ambitious Data Science 
+title: Ambitious Data Science Can Be Painless
 subtitle: By Hatef Monajemi, Riccardo Murri, Eric Jonas, Percy Liang, Victoria Stodden and David Donoho
 author: Hatef Monajemi
 layout: page
 hide: true
 ---
 
-This is a companion page for the paper "Painless Computing Models for Ambitious Data Science", which was presented, for the first time, in [SDSS18](https://ww2.amstat.org/meetings/sdss/2018/)
+This is a companion page for the paper " Ambitious Data Science Can Be Painless", which was presented, for the first time, in [SDSS18](https://ww2.amstat.org/meetings/sdss/2018/)
 
 [Download Paper](#)   
 

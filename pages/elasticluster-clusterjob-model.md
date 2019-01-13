@@ -8,7 +8,7 @@ hide: true
 
 
 # Introduction
-This is a supplemetary page to the paper "Painless Computing Platform for Ambitious Data Science" by Monajemi et al. Here you will learn how to conduct massive computational experiments in the cloud using an approach developed by Hatef Monajemi and Riccardo Murri during the first iteration of [Stats285 course](https://stats285.github.io) at Stanford University in the Fall of 2017; You will use [elasticluster](https://gc3-uzh-ch.github.io/elasticluster/) to build your **own personal cluster** in the cloud 
+This is a supplemetary page to the paper "Ambitious Data Science Can Be Painless" by Monajemi et al. Here you will learn how to conduct massive computational experiments in the cloud using an approach developed by Hatef Monajemi and Riccardo Murri during the first iteration of [Stats285 course](https://stats285.github.io) at Stanford University in the Fall of 2017; You will use [elasticluster](https://gc3-uzh-ch.github.io/elasticluster/) to build your **own personal cluster** in the cloud 
 and then use [clusterjob](http://clusterjob.org) (CJ) to run jobs on this cluster. Both of these steps are very straight-forward and painless.    
     This documents contains the detail of setting up your (GPU-accelerated) cluster and testing that it works properly with CJ. Once these steps are completed, you can then enjoy conducting your own massive data science experiments in the cloud painlessly.
 

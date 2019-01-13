@@ -31,7 +31,7 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 
-title: Data Science Treats
+title: Data Science
 subtitle: By Hatef Monajemi
 description: A place where I share materials on Data Science
 author: Hatef Monajemi
