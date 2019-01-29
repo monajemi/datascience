@@ -8,7 +8,7 @@ hide: true
 
 This is a companion page for the paper "Ambitious Data Science Can Be Painless" submitted to Harvard Data Science Review (Jan 2019).
 
-[Download Paper](https://arxiv.org/pdf/1901.08705.pdf)   
+[Download Paper on arXiv](https://arxiv.org/abs/1901.08705)   
 
 # Paper's How-to Guides 
 1. [ElastiCluster-ClusterJob Model](./elasticluster-clusterjob-model)
