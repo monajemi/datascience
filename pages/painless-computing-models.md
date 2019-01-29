@@ -6,9 +6,9 @@ layout: page
 hide: true
 ---
 
-This is a companion page for the paper " Ambitious Data Science Can Be Painless", which was presented, for the first time, in [SDSS18](https://ww2.amstat.org/meetings/sdss/2018/)
+This is a companion page for the paper "Ambitious Data Science Can Be Painless" submitted to Harvard Data Science Review (Jan 2019).
 
-[Download Paper](#)   
+[Download Paper](https://arxiv.org/pdf/1901.08705.pdf)   
 
 # Paper's How-to Guides 
 1. [ElastiCluster-ClusterJob Model](./elasticluster-clusterjob-model)
