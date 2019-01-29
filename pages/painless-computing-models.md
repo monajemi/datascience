@@ -6,7 +6,7 @@ layout: page
 hide: true
 ---
 
-This is a companion page for the paper "Ambitious Data Science Can Be Painless" submitted to Harvard Data Science Review (Jan 2019).
+This is the companion page for the paper "Ambitious Data Science Can Be Painless" submitted to Harvard Data Science Review (Jan 2019).
 
 [Download Paper on arXiv](https://arxiv.org/abs/1901.08705)   
 
